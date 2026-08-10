@@ -1,0 +1,45 @@
+<!-- Custom Wazuh detection rules for the soc-lab.
+     Load as: /var/ossec/etc/rules/local_rules.xml  (then restart wazuh-manager)
+     Groups: windows_events, sysmon -->
+
+<group name="soclab,">
+
+  <!-- Sysmon E13: persistence via run-key pointing at a non-standard path -->
+  <rule id="100201" level="8">
+    <if_sid>92050</if_sid>
+    <field name="win.system.eventID">13</field>
+    <regex>HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run|HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run</regex>
+    <regex offset="after_prev">AppData\\Local\\Temp|ProgramData</regex>
+    <description>Persistence: run-key to non-standard path</description>
+    <mitre>
+      <id>T1547.001</id>
+    </mitre>
+    <group>persistence,</group>
+  </rule>
+
+  <!-- Sysmon E22: DNS lookup of a brand-new external domain (C2 / staging) -->
+  <rule id="100202" level="5">
+    <if_sid>92050</if_sid>
+    <field name="win.system.eventID">22</field>
+    <field name="win.eventdata.queryName" type="pcre2">(?i)(\.xyz|\.top|\.site|\.info)$</field>
+    <description>New DNS query to a high-risk TLD</description>
+    <mitre>
+      <id>T1071.001</id>
+    </mitre>
+    <group>command_and_control,</group>
+  </rule>
+
+  <!-- Sysmon E1: Office app spawning PowerShell (macro -> shell chain) -->
+  <rule id="100203" level="10">
+    <if_sid>92050</if_sid>
+    <field name="win.system.eventID">1</field>
+    <field name="win.eventdata.parentImage" type="pcre2">(?i)(winword|excel|powerpnt)\.exe$</field>
+    <field name="win.eventdata.image" type="pcre2">(?i)(powershell|pwsh|mshta|cmd)\.exe$</field>
+    <description>Office application spawned a shell (macro chain)</description>
+    <mitre>
+      <id>T1566.001</id>
+    </mitre>
+    <group>initial_access,</group>
+  </rule>
+
+</group>

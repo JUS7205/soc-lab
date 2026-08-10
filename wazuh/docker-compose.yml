@@ -1,0 +1,56 @@
+# Single-node Wazuh stack used by the soc-lab.
+# Pinned 4.9.x images; generated configs follow the official single-node
+# quickstart (https://documentation.wazuh.com/current/quickstart.html) and are
+# intentionally not committed here.
+
+services:
+  wazuh-indexer:
+    image: wazuh/wazuh-indexer:4.9.2
+    hostname: wazuh-indexer
+    restart: unless-stopped
+    environment:
+      - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    ports:
+      - "9200:9200"
+    volumes:
+      - wazuh-indexer-data:/var/lib/wazuh-indexer
+      - ./config/indexer.yml:/usr/share/wazuh-indexer/opensearch.yml
+
+  wazuh-server:
+    image: wazuh/wazuh-server:4.9.2
+    hostname: wazuh-server
+    restart: unless-stopped
+    environment:
+      - "INDEXER_URL=https://wazuh-indexer:9200"
+    volumes:
+      - wazuh-server-data:/var/ossec/data
+    ports:
+      - "1514:1514/udp"
+      - "1515:1515/tcp"
+      - "55000:55000/tcp"
+    depends_on:
+      - wazuh-indexer
+
+  wazuh-dashboard:
+    image: wazuh/wazuh-dashboard:4.9.2
+    hostname: wazuh-dashboard
+    restart: unless-stopped
+    environment:
+      - "INDEXER_URL=https://wazuh-indexer:9200"
+      - "SERVER_URL=https://wazuh-server:55000"
+    ports:
+      - "443:443"
+    depends_on:
+      - wazuh-indexer
+      - wazuh-server
+
+volumes:
+  wazuh-indexer-data:
+  wazuh-server-data:

@@ -1,0 +1,30 @@
+<Sysmon schemaversion="4.90">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessCreate onmatch="exclude">
+        <Image condition="is">C:\Windows\System32\svchost.exe</Image>
+      </ProcessCreate>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <FileCreateTime onmatch="exclude">
+        <Image condition="is">C:\Windows\System32\svchost.exe</Image>
+      </FileCreateTime>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <NetworkConnect onmatch="exclude">
+        <Image condition="is">C:\Windows\System32\svchost.exe</Image>
+        <DestinationPort condition="is">443</DestinationPort>
+      </NetworkConnect>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <RegistryEvent onmatch="exclude">
+        <Image condition="is">C:\Windows\System32\svchost.exe</Image>
+      </RegistryEvent>
+    </RuleGroup>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessTerminate onmatch="include">
+        <Image condition="endswith">powershell.exe</Image>
+      </ProcessTerminate>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
