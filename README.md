@@ -75,9 +75,12 @@ pins the layout and versions.
 - The stack configs follow the official quickstart; the custom parts (rules,
   Sysmon config, playbooks, pulse integration) are original and versioned here.
 - The custom rules are written against the Wazuh 4.9.2 Sysmon ruleset and
-  validated (XML well-formedness, group names) in CI. Live validation with
-  `wazuh-logtest` happens on the next lab run.
-- Screenshots will be added to `docs/screenshots/` after the next rebuild.
+  validated two ways: CI checks XML well-formedness + group names, and a live
+  `wazuh-logtest` run against the manager image confirmed all three rules fire
+  on crafted Sysmon events (and stay silent on a benign control) — see
+  [NOTES.md](NOTES.md) for the test table and the bugs it caught.
+- Screenshots will be added to `docs/screenshots/` after the next full-stack
+  run (indexer + dashboard, not just the manager).
 
 ## License
 

@@ -24,7 +24,7 @@ services:
       - ./config/indexer.yml:/usr/share/wazuh-indexer/opensearch.yml
 
   wazuh-server:
-    image: wazuh/wazuh-server:4.9.2
+    image: wazuh/wazuh-manager:4.9.2
     hostname: wazuh-server
     restart: unless-stopped
     environment:
