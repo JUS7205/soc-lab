@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  validate:
+    name: Config validation (XML + YAML)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate XML + YAML
+        run: |
+          python - <<'EOF'
+          import sys
+          import xml.dom.minidom as m
+          import yaml
+
+          xml_files = ["wazuh/custom-rules.xml", "wazuh/agent-ossec-snippets.conf", "sysmon/sysmon-config.xml"]
+          yaml_files = ["wazuh/docker-compose.yml"]
+
+          for f in xml_files:
+              m.parse(f)
+              print(f"OK  {f}")
+
+          for f in yaml_files:
+              doc = yaml.safe_load(open(f))
+              assert "services" in doc, f"{f}: missing services"
+              print(f"OK  {f} (services: {', '.join(doc['services'])})")
+          EOF
+      - name: Custom rules reference real sysmon groups
+        run: |
+          python - <<'EOF'
+          import re
+
+          rules = open("wazuh/custom-rules.xml").read()
+          for group in re.findall(r"<if_group>([^<]+)</if_group>", rules):
+              # group names come from the stock 4.9 ruleset (sysmon_eventN /
+              # sysmon_event_NN for events >= 10)
+              assert re.match(r"^sysmon_event(?:_\d+|1)$", group), f"unknown group {group}"
+              print(f"OK  group {group}")
+          EOF
