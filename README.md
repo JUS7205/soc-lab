@@ -28,7 +28,10 @@ Windows host --pulse snapshot/diff------------------> host drift baseline
 ## Quickstart
 
 ```sh
-# 1. Bring up the Wazuh stack (single node, pinned 4.9)
+# 0. Generate TLS certs once (see wazuh/config/README.md)
+sh scripts/gen-certs.sh
+
+# 1. Bring up the Wazuh stack (single node, pinned 4.9.2)
 docker compose -f wazuh/docker-compose.yml up -d
 
 # 2. Install the Wazuh agent on the Windows host
@@ -36,18 +39,17 @@ docker compose -f wazuh/docker-compose.yml up -d
 
 # 3. Ship Sysmon events into Wazuh
 #    - Install Sysmon with sysmon/sysmon-config.xml
-#    - Apply the agent ossec.conf snippets in wazuh/agent-ossec-snippets.conf
+#    - Apply the agent ossec snippets in wazuh/agent-ossec-snippets.conf
+#      (custom rules are already baked into the compose mount)
 
-# 4. Load the custom detection rules
-cp wazuh/custom-rules.xml /var/ossec/etc/rules/local_rules.xml
-
-# 5. Build a host baseline with pulse
+# 4. Build a host baseline with pulse
 pulse snapshot > baseline.json
 ```
 
 Generated files (indexer certs, dashboard settings) follow the official Wazuh
-single-node quickstart and are intentionally not committed — the compose file
-pins the layout and versions.
+single-node quickstart; certs are gitignored (regenerate with
+`scripts/gen-certs.sh`), everything else lives under `wazuh/config/` and is
+versioned.
 
 ## What's in here
 
@@ -74,13 +76,13 @@ pins the layout and versions.
 
 - The stack configs follow the official quickstart; the custom parts (rules,
   Sysmon config, playbooks, pulse integration) are original and versioned here.
-- The custom rules are written against the Wazuh 4.9.2 Sysmon ruleset and
-  validated two ways: CI checks XML well-formedness + group names, and a live
-  `wazuh-logtest` run against the manager image confirmed all three rules fire
-  on crafted Sysmon events (and stay silent on a benign control) — see
-  [NOTES.md](NOTES.md) for the test table and the bugs it caught.
-- Screenshots will be added to `docs/screenshots/` after the next full-stack
-  run (indexer + dashboard, not just the manager).
+- The full stack runs (indexer + manager + dashboard on 4.9.2): the custom
+  rules are loaded and live-validated two ways — `wazuh-logtest` against the
+  manager image, and a `GET /rules?group=soclab` on the running stack's API
+  (all three enabled, zero analysisd errors) — see [NOTES.md](NOTES.md).
+- Screenshots for `docs/screenshots/` are still pending a browser session
+  (the dashboard is at `https://localhost:443`, admin/SecretPassword — quickstart
+  defaults; change them before exposing).
 
 ## License
 

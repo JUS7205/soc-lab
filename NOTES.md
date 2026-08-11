@@ -2,6 +2,48 @@
 
 Running log of what broke, what I changed, and why. Newest first.
 
+## 2026-08-11 — Full stack brought up (indexer + manager + dashboard, 4.9.2)
+
+`docker compose up -d` now runs the complete single-node stack on
+Windows/Docker Desktop. Verified end to end:
+
+- indexer answers on https://localhost:9200 with admin auth; cluster green
+- manager: all daemons + API (55000) up; filebeat ships alerts to the indexer
+  (wazuh-alerts-4.x index, 187 docs within minutes)
+- custom rules confirmed loaded via API:
+  `GET /rules?group=soclab` returns all three (100201/100202/100203,
+  status enabled, from `etc/rules/local_rules.xml`); analysisd reports
+  7010 rules enabled, zero errors
+- dashboard on https://localhost:443: login page loads, `POST /auth/login`
+  with admin/SecretPassword → 200 + session cookie (OSD 2.13 route —
+  it's `/auth/login`, not `/api/auth/login`)
+
+**Three real-world bugs found while bringing it up:**
+
+1. **File bind-mount into a named volume poisons first-boot provisioning.**
+   Mounting `custom-rules.xml` at `/var/ossec/etc/rules/local_rules.xml`
+   made Docker create `/var/ossec/etc/rules/` inside the `wazuh_etc` volume,
+   so the image init's "volume is empty?" check skipped copying the entire
+   permanent etc tree — `etc/shared/ar.conf` never appeared and analysisd
+   died (`ERROR (1103): Could not open file 'etc/shared/ar.conf'`). Fix:
+   mount custom rules at `/wazuh-config-mount/etc/rules/local_rules.xml`
+   (the image copies that dir over `/var/ossec` after provisioning).
+   `docker compose down -v` once, then up.
+2. **`wazuh/wazuh-certs-tool` image does not exist on Docker Hub.** Generated
+   the certs with openssl instead (same DNs as the tool); committed as
+   `scripts/gen-certs.sh`. DNs must match indexer `admin_dn`/`nodes_dn`
+   exactly (`/C=US/L=California/O=Wazuh/OU=Wazuh/CN=<node>`).
+3. **Key file permissions.** openssl writes keys 0600 as root; the indexer
+   runs as uid 1000 and Docker Desktop preserves POSIX perms on bind mounts
+   → "Unable to read wazuh.indexer.key". `chmod 644` the key/cert files
+   (now done inside gen-certs.sh).
+
+Also learned: manager API auth is JWT (`/security/user/authenticate` →
+Bearer token), not basic auth; the OSD 2.13 login POST goes to `/auth/login`.
+
+Screenshots are still pending (no browser available on the lab box) —
+`https://localhost:443`, admin/SecretPassword.
+
 ## 2026-08-11 — Custom rules validated live with wazuh-logtest (Wazuh 4.9.2)
 
 **What worked:** brought up the `wazuh/wazuh-manager:4.9.2` image with

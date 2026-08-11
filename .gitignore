@@ -1,0 +1,2 @@
+# Generated TLS certificates (never commit - they are machine-specific)
+wazuh/config/wazuh_indexer_ssl_certs/
