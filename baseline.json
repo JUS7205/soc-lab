@@ -1,0 +1,1320 @@
+{
+  "timestamp": 1786702708,
+  "processes": [
+    {
+      "pid": 0,
+      "parent_pid": 0,
+      "name": "<pid 0>"
+    },
+    {
+      "pid": 4,
+      "parent_pid": 0,
+      "name": "<pid 4>"
+    },
+    {
+      "pid": 56,
+      "parent_pid": 4,
+      "name": "<pid 56>"
+    },
+    {
+      "pid": 116,
+      "parent_pid": 4,
+      "name": "<pid 116>"
+    },
+    {
+      "pid": 436,
+      "parent_pid": 4,
+      "name": "<pid 436>"
+    },
+    {
+      "pid": 604,
+      "parent_pid": 596,
+      "name": "<pid 604>"
+    },
+    {
+      "pid": 700,
+      "parent_pid": 596,
+      "name": "<pid 700>"
+    },
+    {
+      "pid": 708,
+      "parent_pid": 692,
+      "name": "<pid 708>"
+    },
+    {
+      "pid": 772,
+      "parent_pid": 700,
+      "name": "<pid 772>"
+    },
+    {
+      "pid": 780,
+      "parent_pid": 700,
+      "name": "<pid 780>"
+    },
+    {
+      "pid": 800,
+      "parent_pid": 700,
+      "name": "<pid 800>"
+    },
+    {
+      "pid": 936,
+      "parent_pid": 772,
+      "name": "<pid 936>"
+    },
+    {
+      "pid": 964,
+      "parent_pid": 700,
+      "name": "<pid 964>"
+    },
+    {
+      "pid": 1000,
+      "parent_pid": 772,
+      "name": "<pid 1000>"
+    },
+    {
+      "pid": 548,
+      "parent_pid": 772,
+      "name": "<pid 548>"
+    },
+    {
+      "pid": 1044,
+      "parent_pid": 692,
+      "name": "<pid 1044>"
+    },
+    {
+      "pid": 1092,
+      "parent_pid": 1044,
+      "name": "<pid 1092>"
+    },
+    {
+      "pid": 1176,
+      "parent_pid": 772,
+      "name": "<pid 1176>"
+    },
+    {
+      "pid": 1188,
+      "parent_pid": 772,
+      "name": "<pid 1188>"
+    },
+    {
+      "pid": 1252,
+      "parent_pid": 772,
+      "name": "<pid 1252>"
+    },
+    {
+      "pid": 1352,
+      "parent_pid": 1044,
+      "name": "<pid 1352>"
+    },
+    {
+      "pid": 1496,
+      "parent_pid": 772,
+      "name": "<pid 1496>"
+    },
+    {
+      "pid": 1572,
+      "parent_pid": 772,
+      "name": "<pid 1572>"
+    },
+    {
+      "pid": 1580,
+      "parent_pid": 772,
+      "name": "<pid 1580>"
+    },
+    {
+      "pid": 1708,
+      "parent_pid": 772,
+      "name": "<pid 1708>"
+    },
+    {
+      "pid": 1524,
+      "parent_pid": 772,
+      "name": "<pid 1524>"
+    },
+    {
+      "pid": 1920,
+      "parent_pid": 772,
+      "name": "<pid 1920>"
+    },
+    {
+      "pid": 2116,
+      "parent_pid": 772,
+      "name": "<pid 2116>"
+    },
+    {
+      "pid": 2140,
+      "parent_pid": 772,
+      "name": "<pid 2140>"
+    },
+    {
+      "pid": 2264,
+      "parent_pid": 772,
+      "name": "<pid 2264>"
+    },
+    {
+      "pid": 2280,
+      "parent_pid": 772,
+      "name": "<pid 2280>"
+    },
+    {
+      "pid": 2336,
+      "parent_pid": 772,
+      "name": "<pid 2336>"
+    },
+    {
+      "pid": 2404,
+      "parent_pid": 772,
+      "name": "<pid 2404>"
+    },
+    {
+      "pid": 2644,
+      "parent_pid": 772,
+      "name": "<pid 2644>"
+    },
+    {
+      "pid": 2672,
+      "parent_pid": 772,
+      "name": "<pid 2672>"
+    },
+    {
+      "pid": 2728,
+      "parent_pid": 772,
+      "name": "<pid 2728>"
+    },
+    {
+      "pid": 2804,
+      "parent_pid": 772,
+      "name": "<pid 2804>"
+    },
+    {
+      "pid": 2840,
+      "parent_pid": 772,
+      "name": "<pid 2840>"
+    },
+    {
+      "pid": 2856,
+      "parent_pid": 772,
+      "name": "<pid 2856>"
+    },
+    {
+      "pid": 2876,
+      "parent_pid": 772,
+      "name": "<pid 2876>"
+    },
+    {
+      "pid": 2928,
+      "parent_pid": 772,
+      "name": "<pid 2928>"
+    },
+    {
+      "pid": 2968,
+      "parent_pid": 772,
+      "name": "<pid 2968>"
+    },
+    {
+      "pid": 2976,
+      "parent_pid": 772,
+      "name": "<pid 2976>"
+    },
+    {
+      "pid": 3040,
+      "parent_pid": 772,
+      "name": "<pid 3040>"
+    },
+    {
+      "pid": 3228,
+      "parent_pid": 2672,
+      "name": "<pid 3228>"
+    },
+    {
+      "pid": 3272,
+      "parent_pid": 3228,
+      "name": "<pid 3272>"
+    },
+    {
+      "pid": 3476,
+      "parent_pid": 936,
+      "name": "<pid 3476>"
+    },
+    {
+      "pid": 4472,
+      "parent_pid": 772,
+      "name": "<pid 4472>"
+    },
+    {
+      "pid": 5092,
+      "parent_pid": 936,
+      "name": "<pid 5092>"
+    },
+    {
+      "pid": 4364,
+      "parent_pid": 772,
+      "name": "<pid 4364>"
+    },
+    {
+      "pid": 4368,
+      "parent_pid": 772,
+      "name": "<pid 4368>"
+    },
+    {
+      "pid": 6024,
+      "parent_pid": 772,
+      "name": "<pid 6024>"
+    },
+    {
+      "pid": 5424,
+      "parent_pid": 936,
+      "name": "<pid 5424>"
+    },
+    {
+      "pid": 5224,
+      "parent_pid": 1708,
+      "name": "<pid 5224>"
+    },
+    {
+      "pid": 5704,
+      "parent_pid": 2856,
+      "name": "<pid 5704>"
+    },
+    {
+      "pid": 5564,
+      "parent_pid": 772,
+      "name": "<pid 5564>"
+    },
+    {
+      "pid": 6504,
+      "parent_pid": 772,
+      "name": "<pid 6504>"
+    },
+    {
+      "pid": 6832,
+      "parent_pid": 2728,
+      "name": "GameInputRedistService.exe"
+    },
+    {
+      "pid": 4228,
+      "parent_pid": 2856,
+      "name": "nvcontainer.exe"
+    },
+    {
+      "pid": 3696,
+      "parent_pid": 1496,
+      "name": "sihost.exe"
+    },
+    {
+      "pid": 3328,
+      "parent_pid": 2856,
+      "name": "nvcontainer.exe"
+    },
+    {
+      "pid": 7012,
+      "parent_pid": 772,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 7080,
+      "parent_pid": 1496,
+      "name": "<pid 7080>"
+    },
+    {
+      "pid": 7108,
+      "parent_pid": 1496,
+      "name": "taskhostw.exe"
+    },
+    {
+      "pid": 712,
+      "parent_pid": 2928,
+      "name": "VSHelper.exe"
+    },
+    {
+      "pid": 5844,
+      "parent_pid": 1188,
+      "name": "<pid 5844>"
+    },
+    {
+      "pid": 6884,
+      "parent_pid": 6732,
+      "name": "Explorer.EXE"
+    },
+    {
+      "pid": 7468,
+      "parent_pid": 2856,
+      "name": "<pid 7468>"
+    },
+    {
+      "pid": 7504,
+      "parent_pid": 4228,
+      "name": "NVIDIA Overlay.exe"
+    },
+    {
+      "pid": 7960,
+      "parent_pid": 7504,
+      "name": "NVIDIA Overlay.exe"
+    },
+    {
+      "pid": 7992,
+      "parent_pid": 7504,
+      "name": "NVIDIA Overlay.exe"
+    },
+    {
+      "pid": 8172,
+      "parent_pid": 7504,
+      "name": "NVIDIA Overlay.exe"
+    },
+    {
+      "pid": 7716,
+      "parent_pid": 7504,
+      "name": "NVIDIA Overlay.exe"
+    },
+    {
+      "pid": 8368,
+      "parent_pid": 772,
+      "name": "<pid 8368>"
+    },
+    {
+      "pid": 8700,
+      "parent_pid": 8368,
+      "name": "<pid 8700>"
+    },
+    {
+      "pid": 8712,
+      "parent_pid": 8368,
+      "name": "FvContainer.exe"
+    },
+    {
+      "pid": 8856,
+      "parent_pid": 8368,
+      "name": "<pid 8856>"
+    },
+    {
+      "pid": 8756,
+      "parent_pid": 8368,
+      "name": "nvrla.exe"
+    },
+    {
+      "pid": 9716,
+      "parent_pid": 936,
+      "name": "StartMenuExperienceHost.exe"
+    },
+    {
+      "pid": 10016,
+      "parent_pid": 936,
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 9328,
+      "parent_pid": 936,
+      "name": "SearchApp.exe"
+    },
+    {
+      "pid": 9588,
+      "parent_pid": 936,
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 7376,
+      "parent_pid": 6884,
+      "name": "lghub_system_tray.exe"
+    },
+    {
+      "pid": 2152,
+      "parent_pid": 7376,
+      "name": "lghub_agent.exe"
+    },
+    {
+      "pid": 8948,
+      "parent_pid": 5560,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 7292,
+      "parent_pid": 6884,
+      "name": "wallpaper64.exe"
+    },
+    {
+      "pid": 10532,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 10552,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 11004,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 11064,
+      "parent_pid": 8948,
+      "name": "RzEngineMon.exe"
+    },
+    {
+      "pid": 11156,
+      "parent_pid": 772,
+      "name": "<pid 11156>"
+    },
+    {
+      "pid": 11644,
+      "parent_pid": 936,
+      "name": "unsecapp.exe"
+    },
+    {
+      "pid": 11728,
+      "parent_pid": 936,
+      "name": "DllHost.exe"
+    },
+    {
+      "pid": 740,
+      "parent_pid": 6884,
+      "name": "TranslucentTB.exe"
+    },
+    {
+      "pid": 1728,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 2300,
+      "parent_pid": 6884,
+      "name": "WhatsApp.Root.exe"
+    },
+    {
+      "pid": 2708,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 3020,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 4468,
+      "parent_pid": 936,
+      "name": "ShellExperienceHost.exe"
+    },
+    {
+      "pid": 9852,
+      "parent_pid": 936,
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 4940,
+      "parent_pid": 936,
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 11236,
+      "parent_pid": 936,
+      "name": "RuntimeBroker.exe"
+    },
+    {
+      "pid": 10008,
+      "parent_pid": 8948,
+      "name": "RazerAppEngine.exe"
+    },
+    {
+      "pid": 2160,
+      "parent_pid": 6784,
+      "name": "pythonw.exe"
+    },
+    {
+      "pid": 7496,
+      "parent_pid": 2300,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 5644,
+      "parent_pid": 7496,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 9688,
+      "parent_pid": 11856,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 12144,
+      "parent_pid": 9688,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 4660,
+      "parent_pid": 7496,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 4668,
+      "parent_pid": 7496,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 4676,
+      "parent_pid": 7496,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 12968,
+      "parent_pid": 772,
+      "name": "<pid 12968>"
+    },
+    {
+      "pid": 4516,
+      "parent_pid": 9688,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 4604,
+      "parent_pid": 9688,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 12520,
+      "parent_pid": 9688,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 12620,
+      "parent_pid": 9688,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 10140,
+      "parent_pid": 9688,
+      "name": "Spotify.exe"
+    },
+    {
+      "pid": 13420,
+      "parent_pid": 7496,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 13928,
+      "parent_pid": 772,
+      "name": "<pid 13928>"
+    },
+    {
+      "pid": 14308,
+      "parent_pid": 7496,
+      "name": "msedgewebview2.exe"
+    },
+    {
+      "pid": 9996,
+      "parent_pid": 936,
+      "name": "CompPkgSrv.exe"
+    },
+    {
+      "pid": 7364,
+      "parent_pid": 772,
+      "name": "<pid 7364>"
+    },
+    {
+      "pid": 9392,
+      "parent_pid": 772,
+      "name": "<pid 9392>"
+    },
+    {
+      "pid": 12528,
+      "parent_pid": 772,
+      "name": "<pid 12528>"
+    },
+    {
+      "pid": 12944,
+      "parent_pid": 12528,
+      "name": "<pid 12944>"
+    },
+    {
+      "pid": 1428,
+      "parent_pid": 772,
+      "name": "<pid 1428>"
+    },
+    {
+      "pid": 13280,
+      "parent_pid": 936,
+      "name": "smartscreen.exe"
+    },
+    {
+      "pid": 13764,
+      "parent_pid": 6884,
+      "name": "OpenCode.exe"
+    },
+    {
+      "pid": 13016,
+      "parent_pid": 13764,
+      "name": "OpenCode.exe"
+    },
+    {
+      "pid": 10644,
+      "parent_pid": 13764,
+      "name": "OpenCode.exe"
+    },
+    {
+      "pid": 14216,
+      "parent_pid": 13764,
+      "name": "OpenCode.exe"
+    },
+    {
+      "pid": 3436,
+      "parent_pid": 13764,
+      "name": "OpenCode.exe"
+    },
+    {
+      "pid": 5636,
+      "parent_pid": 13764,
+      "name": "OpenCode.exe"
+    },
+    {
+      "pid": 14184,
+      "parent_pid": 936,
+      "name": "TextInputHost.exe"
+    },
+    {
+      "pid": 10480,
+      "parent_pid": 5384,
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 12908,
+      "parent_pid": 10480,
+      "name": "com.docker.backend.exe"
+    },
+    {
+      "pid": 7352,
+      "parent_pid": 12908,
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 10832,
+      "parent_pid": 12908,
+      "name": "com.docker.backend.exe"
+    },
+    {
+      "pid": 9740,
+      "parent_pid": 10832,
+      "name": "com.docker.build.exe"
+    },
+    {
+      "pid": 13848,
+      "parent_pid": 10832,
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 3520,
+      "parent_pid": 10832,
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 7024,
+      "parent_pid": 10832,
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 1320,
+      "parent_pid": 3520,
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 13924,
+      "parent_pid": 7024,
+      "name": "wsl.exe"
+    },
+    {
+      "pid": 3904,
+      "parent_pid": 2140,
+      "name": "<pid 3904>"
+    },
+    {
+      "pid": 12080,
+      "parent_pid": 3904,
+      "name": "<pid 12080>"
+    },
+    {
+      "pid": 7144,
+      "parent_pid": 13848,
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 2444,
+      "parent_pid": 936,
+      "name": "DllHost.exe"
+    },
+    {
+      "pid": 12360,
+      "parent_pid": 13848,
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 12988,
+      "parent_pid": 13848,
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 5852,
+      "parent_pid": 13848,
+      "name": "Docker Desktop.exe"
+    },
+    {
+      "pid": 11360,
+      "parent_pid": 936,
+      "name": "DllHost.exe"
+    },
+    {
+      "pid": 12004,
+      "parent_pid": 3040,
+      "name": "wslrelay.exe"
+    },
+    {
+      "pid": 13984,
+      "parent_pid": 3040,
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 11568,
+      "parent_pid": 13984,
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 8012,
+      "parent_pid": 3040,
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 13136,
+      "parent_pid": 13924,
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 9296,
+      "parent_pid": 8012,
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 12368,
+      "parent_pid": 1320,
+      "name": "wslhost.exe"
+    },
+    {
+      "pid": 7732,
+      "parent_pid": 13136,
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 5752,
+      "parent_pid": 12368,
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 13028,
+      "parent_pid": 13984,
+      "name": "msrdc.exe"
+    },
+    {
+      "pid": 14612,
+      "parent_pid": 2116,
+      "name": "<pid 14612>"
+    },
+    {
+      "pid": 15064,
+      "parent_pid": 10832,
+      "name": "docker-agent.exe"
+    },
+    {
+      "pid": 15220,
+      "parent_pid": 772,
+      "name": "<pid 15220>"
+    },
+    {
+      "pid": 14752,
+      "parent_pid": 936,
+      "name": "UserOOBEBroker.exe"
+    },
+    {
+      "pid": 1608,
+      "parent_pid": 3436,
+      "name": "powershell.EXE"
+    },
+    {
+      "pid": 4212,
+      "parent_pid": 1608,
+      "name": "conhost.exe"
+    },
+    {
+      "pid": 14500,
+      "parent_pid": 1608,
+      "name": "pulse.exe"
+    }
+  ],
+  "connections": [
+    {
+      "pid": 548,
+      "local_addr": "0.0.0.0:135",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 4,
+      "local_addr": "172.18.64.1:139",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 4,
+      "local_addr": "172.29.224.1:139",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 4,
+      "local_addr": "192.168.0.159:139",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 1572,
+      "local_addr": "0.0.0.0:2179",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 1252,
+      "local_addr": "0.0.0.0:5040",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 9688,
+      "local_addr": "127.0.0.1:7768",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2152,
+      "local_addr": "127.0.0.1:9010",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2804,
+      "local_addr": "127.0.0.1:9180",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 3228,
+      "local_addr": "0.0.0.0:24800",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 3228,
+      "local_addr": "192.168.0.159:24800",
+      "remote_addr": "192.168.0.135:51808",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 2152,
+      "local_addr": "127.0.0.1:45654",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 800,
+      "local_addr": "0.0.0.0:49664",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 700,
+      "local_addr": "0.0.0.0:49665",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 1176,
+      "local_addr": "0.0.0.0:49666",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 1496,
+      "local_addr": "0.0.0.0:49667",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2404,
+      "local_addr": "0.0.0.0:49668",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2928,
+      "local_addr": "127.0.0.1:49669",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2928,
+      "local_addr": "127.0.0.1:49670",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 772,
+      "local_addr": "0.0.0.0:49674",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2876,
+      "local_addr": "127.0.0.1:49675",
+      "remote_addr": "127.0.0.1:55749",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 1496,
+      "local_addr": "192.168.0.159:55640",
+      "remote_addr": "4.207.247.137:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 10552,
+      "local_addr": "192.168.0.159:55733",
+      "remote_addr": "52.86.79.141:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 10552,
+      "local_addr": "127.0.0.1:55749",
+      "remote_addr": "127.0.0.1:49675",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 9688,
+      "local_addr": "192.168.0.159:55811",
+      "remote_addr": "104.199.65.9:4070",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 9688,
+      "local_addr": "0.0.0.0:55812",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 9688,
+      "local_addr": "192.168.0.159:55816",
+      "remote_addr": "35.186.224.33:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 4516,
+      "local_addr": "192.168.0.159:55817",
+      "remote_addr": "35.186.224.33:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 2160,
+      "local_addr": "127.0.0.1:55847",
+      "remote_addr": "127.0.0.1:55848",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 2160,
+      "local_addr": "127.0.0.1:55848",
+      "remote_addr": "127.0.0.1:55847",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56711",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56753",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56766",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 3436,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56781",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 3436,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56743",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56748",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56761",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 3436,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56328",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56734",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56723",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56739",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56771",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56775",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "127.0.0.1:56321",
+      "remote_addr": "127.0.0.1:56728",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 14216,
+      "local_addr": "127.0.0.1:56328",
+      "remote_addr": "127.0.0.1:56321",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56352",
+      "remote_addr": "104.18.43.187:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56353",
+      "remote_addr": "3.160.170.96:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56356",
+      "remote_addr": "172.64.144.74:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56357",
+      "remote_addr": "104.18.43.187:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56695",
+      "remote_addr": "35.186.224.26:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56699",
+      "remote_addr": "35.190.88.7:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56701",
+      "remote_addr": "35.186.224.24:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56707",
+      "remote_addr": "134.33.185.100:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56708",
+      "remote_addr": "199.232.214.172:80",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56713",
+      "remote_addr": "72.153.5.62:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56718",
+      "remote_addr": "199.232.210.172:80",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56719",
+      "remote_addr": "199.232.214.172:80",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56724",
+      "remote_addr": "172.65.90.20:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 4516,
+      "local_addr": "192.168.0.159:56736",
+      "remote_addr": "35.186.224.26:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 0,
+      "local_addr": "192.168.0.159:56751",
+      "remote_addr": "172.65.90.20:443",
+      "state": "TIME_WAIT"
+    },
+    {
+      "pid": 4516,
+      "local_addr": "192.168.0.159:56756",
+      "remote_addr": "35.186.224.24:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 4516,
+      "local_addr": "192.168.0.159:56758",
+      "remote_addr": "35.186.224.24:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 4516,
+      "local_addr": "192.168.0.159:56760",
+      "remote_addr": "35.186.224.26:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 10832,
+      "local_addr": "192.168.0.159:56763",
+      "remote_addr": "104.21.40.220:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 3436,
+      "local_addr": "192.168.0.159:56769",
+      "remote_addr": "172.65.90.20:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 2976,
+      "local_addr": "192.168.0.159:56779",
+      "remote_addr": "48.209.109.58:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 2976,
+      "local_addr": "192.168.0.159:56780",
+      "remote_addr": "48.209.109.58:443",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 14216,
+      "local_addr": "127.0.0.1:56781",
+      "remote_addr": "127.0.0.1:56321",
+      "state": "ESTABLISHED"
+    },
+    {
+      "pid": 2152,
+      "local_addr": "127.0.0.1:56782",
+      "remote_addr": "127.0.0.1:28194",
+      "state": "SYN_SENT"
+    },
+    {
+      "pid": 9688,
+      "local_addr": "0.0.0.0:57621",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 10832,
+      "local_addr": "0.0.0.0:443",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 4,
+      "local_addr": "0.0.0.0:445",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 10832,
+      "local_addr": "0.0.0.0:1514",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 10832,
+      "local_addr": "0.0.0.0:1515",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 10832,
+      "local_addr": "0.0.0.0:9200",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 2876,
+      "local_addr": "0.0.0.0:49675",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    },
+    {
+      "pid": 10832,
+      "local_addr": "0.0.0.0:55000",
+      "remote_addr": "0.0.0.0:0",
+      "state": "LISTEN"
+    }
+  ]
+}

@@ -2,6 +2,18 @@
 
 Running log of what broke, what I changed, and why. Newest first.
 
+## 2026-08-11 — pulse tripwire demoed on the live box
+
+- `pulse snapshot > baseline.json` (committed) captured the host process tree
+  + TCP table (non-elevated run works).
+- Spawned a throwaway `cmd.exe /c timeout /t 60` marker, took a second
+  snapshot, ran `pulse diff` and `pulse verdict`: verdict **ALERT** with the
+  marker chain (`cmd.exe` → `conhost.exe` → `timeout.exe`) plus a new
+  external connection. The tripwire path works on real Windows.
+- Note: agent-less logtest on the LIVE manager cannot exercise the sysmon
+  chain (the base-rule 60000 patch used in the container validation is
+  test-only; the live ruleset needs a real agent through the winevt channel).
+
 ## 2026-08-11 — Full stack brought up (indexer + manager + dashboard, 4.9.2)
 
 `docker compose up -d` now runs the complete single-node stack on
